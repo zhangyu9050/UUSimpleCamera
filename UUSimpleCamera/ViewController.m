@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UUCameraViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UUCameraViewController *cameraController;
 
 @end
 
@@ -17,6 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _cameraController = [[UUCameraViewController alloc] init];
+    _cameraController.view.frame = self.view.bounds;
+    
+    [self.view addSubview:_cameraController.view];
 }
 
 - (void)didReceiveMemoryWarning {

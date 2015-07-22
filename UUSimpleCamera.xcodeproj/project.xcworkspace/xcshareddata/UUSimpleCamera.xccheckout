@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6C29CA20-0768-451F-88D3-05B68455B2E7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UUSimpleCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>35527EE940D38ACBD99E597EF12732F51E85521D</key>
+		<string>https://github.com/zhangyu9050/UUSimpleCamera.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UUSimpleCamera.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>35527EE940D38ACBD99E597EF12732F51E85521D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhangyu9050/UUSimpleCamera.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>35527EE940D38ACBD99E597EF12732F51E85521D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>35527EE940D38ACBD99E597EF12732F51E85521D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UUSimpleCamera</string>
+		</dict>
+	</array>
+</dict>
+</plist>

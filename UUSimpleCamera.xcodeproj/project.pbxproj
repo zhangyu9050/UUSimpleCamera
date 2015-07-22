@@ -14,6 +14,9 @@
 		2AF98EC01B5F772500654736 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EBF1B5F772500654736 /* Images.xcassets */; };
 		2AF98EC31B5F772500654736 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EC11B5F772500654736 /* LaunchScreen.xib */; };
 		2AF98ECF1B5F772500654736 /* UUSimpleCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98ECE1B5F772500654736 /* UUSimpleCameraTests.m */; };
+		2AF98EDB1B5F77BD00654736 /* UUCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EDA1B5F77BD00654736 /* UUCameraViewController.m */; };
+		2AF98EDE1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EDD1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png */; };
+		2AF98EE41B5FCE7400654736 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EE31B5FCE7400654736 /* FXBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		2AF98EC81B5F772500654736 /* UUSimpleCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UUSimpleCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF98ECD1B5F772500654736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF98ECE1B5F772500654736 /* UUSimpleCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UUSimpleCameraTests.m; sourceTree = "<group>"; };
+		2AF98ED91B5F77BD00654736 /* UUCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUCameraViewController.h; sourceTree = "<group>"; };
+		2AF98EDA1B5F77BD00654736 /* UUCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUCameraViewController.m; sourceTree = "<group>"; };
+		2AF98EDD1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_new_camera_stroke@2x~iphone.png"; sourceTree = "<group>"; };
+		2AF98EE21B5FCE7400654736 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		2AF98EE31B5FCE7400654736 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 		2AF98EB11B5F772500654736 /* UUSimpleCamera */ = {
 			isa = PBXGroup;
 			children = (
+				2AF98EE01B5FCE7400654736 /* OtherFramework */,
+				2AF98EDF1B5FBB2D00654736 /* View */,
+				2AF98EDC1B5FBAC300654736 /* Resource */,
+				2AF98ED81B5F77A500654736 /* UUCamera */,
 				2AF98EB61B5F772500654736 /* AppDelegate.h */,
 				2AF98EB71B5F772500654736 /* AppDelegate.m */,
 				2AF98EB91B5F772500654736 /* ViewController.h */,
@@ -117,6 +129,47 @@
 				2AF98ECD1B5F772500654736 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AF98ED81B5F77A500654736 /* UUCamera */ = {
+			isa = PBXGroup;
+			children = (
+				2AF98ED91B5F77BD00654736 /* UUCameraViewController.h */,
+				2AF98EDA1B5F77BD00654736 /* UUCameraViewController.m */,
+			);
+			path = UUCamera;
+			sourceTree = "<group>";
+		};
+		2AF98EDC1B5FBAC300654736 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2AF98EDD1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2AF98EDF1B5FBB2D00654736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AF98EE01B5FCE7400654736 /* OtherFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2AF98EE11B5FCE7400654736 /* FXBlurView */,
+			);
+			path = OtherFramework;
+			sourceTree = "<group>";
+		};
+		2AF98EE11B5FCE7400654736 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				2AF98EE21B5FCE7400654736 /* FXBlurView.h */,
+				2AF98EE31B5FCE7400654736 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF98EDE1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png in Resources */,
 				2AF98EBE1B5F772500654736 /* Main.storyboard in Resources */,
 				2AF98EC31B5F772500654736 /* LaunchScreen.xib in Resources */,
 				2AF98EC01B5F772500654736 /* Images.xcassets in Resources */,
@@ -220,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF98EBB1B5F772500654736 /* ViewController.m in Sources */,
+				2AF98EDB1B5F77BD00654736 /* UUCameraViewController.m in Sources */,
+				2AF98EE41B5FCE7400654736 /* FXBlurView.m in Sources */,
 				2AF98EB81B5F772500654736 /* AppDelegate.m in Sources */,
 				2AF98EB51B5F772500654736 /* main.m in Sources */,
 			);
