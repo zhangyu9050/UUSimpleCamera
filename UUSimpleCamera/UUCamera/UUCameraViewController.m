@@ -10,6 +10,7 @@
 
 @interface UUCameraViewController() < AVCaptureFileOutputRecordingDelegate >
 
+@property (nonatomic, strong) UIView *preview;
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (strong, nonatomic) AVCaptureStillImageOutput *stillImageOutput;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
@@ -22,11 +23,14 @@
     
     if (self = [super init]) {
         
+        self.preview = [[UIView alloc] initWithFrame:CGRectZero];
+        self.preview.backgroundColor = [UIColor clearColor];
+        [self.view addSubview:self.preview];
+        
         [self initialize];
         
         self.view.backgroundColor = [UIColor clearColor];
         self.view.autoresizingMask = UIViewAutoresizingNone;
-        
     }
     
     return self;
@@ -43,7 +47,7 @@
     _captureVideoPreviewLayer.bounds = self.view.bounds;
     _captureVideoPreviewLayer.position = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame));
     
-    [self.view.layer addSublayer:_captureVideoPreviewLayer];
+    [self.preview.layer addSublayer:_captureVideoPreviewLayer];
     
     AVCaptureDevicePosition devicePosition;
     devicePosition = AVCaptureDevicePositionBack;
