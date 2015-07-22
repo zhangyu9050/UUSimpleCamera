@@ -10,6 +10,8 @@
 #import "UUCameraViewController.h"
 #import "FXBlurView.h"
 
+#import "JMBackgroundCameraView.h"
+
 @interface ViewController ()
 
 @property (nonatomic, strong) FXBlurView *blurView;
@@ -27,34 +29,42 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 
+    self.view.backgroundColor = [UIColor clearColor];
+    
+    JMBackgroundCameraView *view = [[JMBackgroundCameraView alloc] initWithFrame:self.view.bounds
+                                                                  positionDevice:DevicePositonBack
+                                                                            blur:UIBlurEffectStyleLight];
+    
+    [self.view addSubview:view];
     
     
-    [self.view setBackgroundColor:[UIColor clearColor]];
-//    self.view.alpha = .5f;
     
-    _cameraController = [[UUCameraViewController alloc] init];
-    _cameraController.view.frame = self.view.bounds;
-    
-    [self.view addSubview:_cameraController.view];
-    
-    UIImageView *image = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    image.image = [UIImage imageNamed:@"button_new"];
-    image.alpha =.5f;
-//    image.backgroundColor = [UIColor whiteColor];
-//    image.frame = self.view.bounds;
-    [self.view addSubview:image];
-    
-    image.layer.borderWidth = 2;
-    image.layer.borderColor = [UIColor redColor].CGColor;
-    
-    _blurView = [[FXBlurView alloc] initWithFrame:self.view.bounds];
-    
-    _blurView.dynamic = NO;
-    _blurView.blurRadius = 5;
-    _blurView.backgroundColor = [UIColor clearColor];
-//    _blurView.tintColor = [UIColor colorWithRed:0 green:0.5 blue:0.5 alpha:1];
-//    _blurView.contentMode = UIViewContentModeBottom;
-    [self.view addSubview:_blurView];
+//    [self.view setBackgroundColor:[UIColor clearColor]];
+////    self.view.alpha = .5f;
+//    
+//    _cameraController = [[UUCameraViewController alloc] init];
+//    _cameraController.view.frame = self.view.bounds;
+//    
+//    [self.view addSubview:_cameraController.view];
+//    
+//    UIImageView *image = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    image.image = [UIImage imageNamed:@"button_new"];
+//    image.alpha =.5f;
+////    image.backgroundColor = [UIColor whiteColor];
+////    image.frame = self.view.bounds;
+//    [self.view addSubview:image];
+//    
+//    image.layer.borderWidth = 2;
+//    image.layer.borderColor = [UIColor redColor].CGColor;
+//    
+//    _blurView = [[FXBlurView alloc] initWithFrame:self.view.bounds];
+//    
+//    _blurView.dynamic = NO;
+//    _blurView.blurRadius = 5;
+//    _blurView.backgroundColor = [UIColor clearColor];
+////    _blurView.tintColor = [UIColor colorWithRed:0 green:0.5 blue:0.5 alpha:1];
+////    _blurView.contentMode = UIViewContentModeBottom;
+//    [self.view addSubview:_blurView];
     
     
 //    self.snapButton = [UIButton buttonWithType:UIButtonTypeCustom];

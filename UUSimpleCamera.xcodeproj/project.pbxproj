@@ -19,6 +19,7 @@
 		2AF98EE41B5FCE7400654736 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EE31B5FCE7400654736 /* FXBlurView.m */; };
 		2AF98EE71B5FCEE800654736 /* UUHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EE61B5FCEE800654736 /* UUHomeView.m */; };
 		2AF98EEB1B5FF39900654736 /* button_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EEA1B5FF39900654736 /* button_new.png */; };
+		2AF98EEE1B5FFC5200654736 /* JMBackgroundCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EED1B5FFC5200654736 /* JMBackgroundCameraView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2AF98EE51B5FCEE800654736 /* UUHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUHomeView.h; sourceTree = "<group>"; };
 		2AF98EE61B5FCEE800654736 /* UUHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUHomeView.m; sourceTree = "<group>"; };
 		2AF98EEA1B5FF39900654736 /* button_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_new.png; sourceTree = "<group>"; };
+		2AF98EEC1B5FFC5200654736 /* JMBackgroundCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBackgroundCameraView.h; sourceTree = "<group>"; };
+		2AF98EED1B5FFC5200654736 /* JMBackgroundCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBackgroundCameraView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 		2AF98ED81B5F77A500654736 /* UUCamera */ = {
 			isa = PBXGroup;
 			children = (
+				2AF98EEC1B5FFC5200654736 /* JMBackgroundCameraView.h */,
+				2AF98EED1B5FFC5200654736 /* JMBackgroundCameraView.m */,
 				2AF98ED91B5F77BD00654736 /* UUCameraViewController.h */,
 				2AF98EDA1B5F77BD00654736 /* UUCameraViewController.m */,
 			);
@@ -283,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF98EBB1B5F772500654736 /* ViewController.m in Sources */,
+				2AF98EEE1B5FFC5200654736 /* JMBackgroundCameraView.m in Sources */,
 				2AF98EDB1B5F77BD00654736 /* UUCameraViewController.m in Sources */,
 				2AF98EE41B5FCE7400654736 /* FXBlurView.m in Sources */,
 				2AF98EE71B5FCEE800654736 /* UUHomeView.m in Sources */,
@@ -478,6 +484,7 @@
 				2AF98ED41B5F772500654736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AF98ED51B5F772500654736 /* Build configuration list for PBXNativeTarget "UUSimpleCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +493,7 @@
 				2AF98ED71B5F772500654736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
