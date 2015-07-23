@@ -51,6 +51,8 @@
 		2A74C8551B60E21200E8D226 /* gfx_bg_capture_right@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gfx_bg_capture_right@2x~iphone.png"; sourceTree = "<group>"; };
 		2A74C85C1B60E4B900E8D226 /* UUCameraActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUCameraActionView.h; sourceTree = "<group>"; };
 		2A74C85D1B60E4B900E8D226 /* UUCameraActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUCameraActionView.m; sourceTree = "<group>"; };
+		2A74C8601B60E84A00E8D226 /* UUCamear-Import.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UUCamear-Import.h"; sourceTree = "<group>"; };
+		2A74C8611B60E85D00E8D226 /* UUCamear-Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UUCamear-Macros.h"; sourceTree = "<group>"; };
 		2AF98EAF1B5F772500654736 /* UUSimpleCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UUSimpleCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF98EB31B5F772500654736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF98EB41B5F772500654736 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A74C85F1B60E82B00E8D226 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				2A74C8601B60E84A00E8D226 /* UUCamear-Import.h */,
+				2A74C8611B60E85D00E8D226 /* UUCamear-Macros.h */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		2AF98EA61B5F772500654736 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +125,7 @@
 		2AF98EB11B5F772500654736 /* UUSimpleCamera */ = {
 			isa = PBXGroup;
 			children = (
+				2A74C85F1B60E82B00E8D226 /* Configs */,
 				2AF98EE01B5FCE7400654736 /* OtherFramework */,
 				2AF98EDF1B5FBB2D00654736 /* View */,
 				2AF98EDC1B5FBAC300654736 /* Resource */,
