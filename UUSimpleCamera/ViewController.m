@@ -27,7 +27,7 @@
 
 
     [self.view addSubview:self.actionView];
-    [self.view addSubview:self.homeView];
+//    [self.view addSubview:self.homeView];
     
     
 //    [self.view setBackgroundColor:[UIColor clearColor]];

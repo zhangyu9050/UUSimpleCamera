@@ -13,6 +13,7 @@
 @interface UUCameraActionView()
 
 @property (nonatomic, strong, getter = getCameraView) UUCameraView *cameraView;
+@property (nonatomic, strong, getter = getRecordView) UUCameraRecordingView *recordView;
 
 @property (nonatomic, strong, getter = getImageLeft) UIImageView *imageLeft;
 @property (nonatomic, strong, getter = getImageRight) UIImageView *imageRight;
@@ -36,6 +37,7 @@
 - (void)configUI{
 
     [self addSubview:self.cameraView];
+    [self addSubview:self.recordView];
     [self addSubview:self.imageLeft];
     [self addSubview:self.imageRight];
     
@@ -113,6 +115,20 @@
     }
     
     return _btnFlip;
+}
+
+- (UUCameraRecordingView *)getRecordView{
+
+    if (!_recordView) {
+        
+        CGFloat width = ScreenHeight -40;
+        _recordView = [[UUCameraRecordingView alloc] initWithFrame:CGRectMake(0, 0, width, width)
+                                                            strokeWidth:7.f
+                                                            insets:UIEdgeInsetsMake(10.f, 0.f, 10.f, 0.f)];
+        _recordView.center = self.center;
+    }
+    
+    return _recordView;
 }
 
 - (UUCameraView *)getCameraView{

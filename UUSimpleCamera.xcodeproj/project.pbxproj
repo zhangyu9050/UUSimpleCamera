@@ -16,6 +16,8 @@
 		2A74C85A1B60E21200E8D226 /* gfx_bg_capture_left@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A74C8541B60E21200E8D226 /* gfx_bg_capture_left@2x~iphone.png */; };
 		2A74C85B1B60E21200E8D226 /* gfx_bg_capture_right@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A74C8551B60E21200E8D226 /* gfx_bg_capture_right@2x~iphone.png */; };
 		2A74C85E1B60E4B900E8D226 /* UUCameraActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A74C85D1B60E4B900E8D226 /* UUCameraActionView.m */; };
+		2A74C8641B60EE2600E8D226 /* UUCameraTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A74C8631B60EE2600E8D226 /* UUCameraTimeView.m */; };
+		2A74C86A1B612BA800E8D226 /* UUCameraRecordingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A74C8691B612BA800E8D226 /* UUCameraRecordingView.m */; };
 		2AF98EB51B5F772500654736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EB41B5F772500654736 /* main.m */; };
 		2AF98EB81B5F772500654736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EB71B5F772500654736 /* AppDelegate.m */; };
 		2AF98EBB1B5F772500654736 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EBA1B5F772500654736 /* ViewController.m */; };
@@ -53,6 +55,10 @@
 		2A74C85D1B60E4B900E8D226 /* UUCameraActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUCameraActionView.m; sourceTree = "<group>"; };
 		2A74C8601B60E84A00E8D226 /* UUCamear-Import.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UUCamear-Import.h"; sourceTree = "<group>"; };
 		2A74C8611B60E85D00E8D226 /* UUCamear-Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UUCamear-Macros.h"; sourceTree = "<group>"; };
+		2A74C8621B60EE2600E8D226 /* UUCameraTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUCameraTimeView.h; sourceTree = "<group>"; };
+		2A74C8631B60EE2600E8D226 /* UUCameraTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUCameraTimeView.m; sourceTree = "<group>"; };
+		2A74C8681B612BA800E8D226 /* UUCameraRecordingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUCameraRecordingView.h; sourceTree = "<group>"; };
+		2A74C8691B612BA800E8D226 /* UUCameraRecordingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUCameraRecordingView.m; sourceTree = "<group>"; };
 		2AF98EAF1B5F772500654736 /* UUSimpleCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UUSimpleCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF98EB31B5F772500654736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF98EB41B5F772500654736 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -175,6 +181,10 @@
 				2A74C84B1B60CEDB00E8D226 /* UUCameraView.m */,
 				2A74C85C1B60E4B900E8D226 /* UUCameraActionView.h */,
 				2A74C85D1B60E4B900E8D226 /* UUCameraActionView.m */,
+				2A74C8621B60EE2600E8D226 /* UUCameraTimeView.h */,
+				2A74C8631B60EE2600E8D226 /* UUCameraTimeView.m */,
+				2A74C8681B612BA800E8D226 /* UUCameraRecordingView.h */,
+				2A74C8691B612BA800E8D226 /* UUCameraRecordingView.m */,
 			);
 			path = UUCamera;
 			sourceTree = "<group>";
@@ -372,8 +382,10 @@
 			files = (
 				2A74C84F1B60D14000E8D226 /* UUHomeCollectionCell.m in Sources */,
 				2AF98EBB1B5F772500654736 /* ViewController.m in Sources */,
+				2A74C8641B60EE2600E8D226 /* UUCameraTimeView.m in Sources */,
 				2AF98EE71B5FCEE800654736 /* UUHomeView.m in Sources */,
 				2A74C85E1B60E4B900E8D226 /* UUCameraActionView.m in Sources */,
+				2A74C86A1B612BA800E8D226 /* UUCameraRecordingView.m in Sources */,
 				2AF98EB81B5F772500654736 /* AppDelegate.m in Sources */,
 				2AF98EB51B5F772500654736 /* main.m in Sources */,
 				2A74C84C1B60CEDB00E8D226 /* UUCameraView.m in Sources */,

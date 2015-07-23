@@ -15,5 +15,6 @@
 //View
 #import "UUCameraView.h"
 #import "UUCameraActionView.h"
+#import "UUCameraRecordingView.h"
 
 #endif
