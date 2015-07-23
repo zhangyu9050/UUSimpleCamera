@@ -1,18 +1,29 @@
 //
-//  JMBackgroundCameraView.m
-//  JMBackgroundCameraView
+//  UUCameraView.m
+//  UUSimpleCamera
 //
-//  Created by Joan Molinas on 23/10/14.
-//  Copyright (c) 2014 joan molinas ramon. All rights reserved.
+//  Created by zhangyu on 15/7/23.
+//  Copyright (c) 2015年 zhangyu. All rights reserved.
 //
 
-#import "JMBackgroundCameraView.h"
+#import "UUCameraView.h"
 
+@interface UUCameraView(){
 
-@implementation JMBackgroundCameraView {
     UIVisualEffectView *blurEffectView;
 }
--(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(UIBlurEffectStyle)blur {
+
+@property (nonatomic, retain) AVCaptureSession *session;
+@property (nonatomic, retain) AVCaptureDeviceInput *input;
+@property (nonatomic, retain) AVCaptureDevice *device;
+@property (nonatomic, retain) AVCaptureStillImageOutput *imageOutput;
+@property (nonatomic, retain) AVCaptureVideoPreviewLayer *preview;
+
+@end
+
+@implementation UUCameraView
+
+-(instancetype)initWithFrame:(CGRect)frame positionDevice:(UUDevicePositon)position blur:(UIBlurEffectStyle)blur {
     if (self = [super initWithFrame:frame]) {
         [self initCameraInPosition:position];
         [self addBlurEffect:blur];
@@ -20,20 +31,20 @@
     return self;
 }
 
--(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position {
+-(instancetype)initWithFrame:(CGRect)frame positionDevice:(UUDevicePositon)position {
     if (self = [super initWithFrame:frame]) {
         [self initCameraInPosition:position];
     }
     return self;
 }
--(void)initCameraInPosition:(DevicePositon)position {
+-(void)initCameraInPosition:(UUDevicePositon)position {
     self.session = [AVCaptureSession new];
     [self.session setSessionPreset:AVCaptureSessionPresetHigh];
     
     NSArray *devices = [NSArray new];
     devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
     for (AVCaptureDevice *device in devices) {
-        if (position == DevicePositonBack) {
+        if (position == kUUDevicePositonBack) {
             if ([device position] == AVCaptureDevicePositionBack) {
                 _device = device;
                 break;
@@ -62,7 +73,7 @@
     [self.preview setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [self.layer addSublayer:self.preview];
     [self.session startRunning];
-
+    
 }
 -(void)removeBlurEffect {
     [blurEffectView removeFromSuperview];

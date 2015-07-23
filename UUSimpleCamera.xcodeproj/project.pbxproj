@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A74C84C1B60CEDB00E8D226 /* UUCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A74C84B1B60CEDB00E8D226 /* UUCameraView.m */; };
+		2A74C84F1B60D14000E8D226 /* UUHomeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A74C84E1B60D14000E8D226 /* UUHomeCollectionCell.m */; };
 		2AF98EB51B5F772500654736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EB41B5F772500654736 /* main.m */; };
 		2AF98EB81B5F772500654736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EB71B5F772500654736 /* AppDelegate.m */; };
 		2AF98EBB1B5F772500654736 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EBA1B5F772500654736 /* ViewController.m */; };
@@ -14,12 +16,9 @@
 		2AF98EC01B5F772500654736 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EBF1B5F772500654736 /* Images.xcassets */; };
 		2AF98EC31B5F772500654736 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EC11B5F772500654736 /* LaunchScreen.xib */; };
 		2AF98ECF1B5F772500654736 /* UUSimpleCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98ECE1B5F772500654736 /* UUSimpleCameraTests.m */; };
-		2AF98EDB1B5F77BD00654736 /* UUCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EDA1B5F77BD00654736 /* UUCameraViewController.m */; };
 		2AF98EDE1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EDD1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png */; };
-		2AF98EE41B5FCE7400654736 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EE31B5FCE7400654736 /* FXBlurView.m */; };
 		2AF98EE71B5FCEE800654736 /* UUHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EE61B5FCEE800654736 /* UUHomeView.m */; };
 		2AF98EEB1B5FF39900654736 /* button_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AF98EEA1B5FF39900654736 /* button_new.png */; };
-		2AF98EEE1B5FFC5200654736 /* JMBackgroundCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF98EED1B5FFC5200654736 /* JMBackgroundCameraView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A74C84A1B60CEDB00E8D226 /* UUCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUCameraView.h; sourceTree = "<group>"; };
+		2A74C84B1B60CEDB00E8D226 /* UUCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUCameraView.m; sourceTree = "<group>"; };
+		2A74C84D1B60D14000E8D226 /* UUHomeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUHomeCollectionCell.h; sourceTree = "<group>"; };
+		2A74C84E1B60D14000E8D226 /* UUHomeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUHomeCollectionCell.m; sourceTree = "<group>"; };
 		2AF98EAF1B5F772500654736 /* UUSimpleCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UUSimpleCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF98EB31B5F772500654736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF98EB41B5F772500654736 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,16 +49,10 @@
 		2AF98EC81B5F772500654736 /* UUSimpleCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UUSimpleCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF98ECD1B5F772500654736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF98ECE1B5F772500654736 /* UUSimpleCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UUSimpleCameraTests.m; sourceTree = "<group>"; };
-		2AF98ED91B5F77BD00654736 /* UUCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUCameraViewController.h; sourceTree = "<group>"; };
-		2AF98EDA1B5F77BD00654736 /* UUCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUCameraViewController.m; sourceTree = "<group>"; };
 		2AF98EDD1B5FBAC300654736 /* button_new_camera_stroke@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_new_camera_stroke@2x~iphone.png"; sourceTree = "<group>"; };
-		2AF98EE21B5FCE7400654736 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
-		2AF98EE31B5FCE7400654736 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		2AF98EE51B5FCEE800654736 /* UUHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUHomeView.h; sourceTree = "<group>"; };
 		2AF98EE61B5FCEE800654736 /* UUHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUHomeView.m; sourceTree = "<group>"; };
 		2AF98EEA1B5FF39900654736 /* button_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_new.png; sourceTree = "<group>"; };
-		2AF98EEC1B5FFC5200654736 /* JMBackgroundCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBackgroundCameraView.h; sourceTree = "<group>"; };
-		2AF98EED1B5FFC5200654736 /* JMBackgroundCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBackgroundCameraView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +139,8 @@
 		2AF98ED81B5F77A500654736 /* UUCamera */ = {
 			isa = PBXGroup;
 			children = (
-				2AF98EEC1B5FFC5200654736 /* JMBackgroundCameraView.h */,
-				2AF98EED1B5FFC5200654736 /* JMBackgroundCameraView.m */,
-				2AF98ED91B5F77BD00654736 /* UUCameraViewController.h */,
-				2AF98EDA1B5F77BD00654736 /* UUCameraViewController.m */,
+				2A74C84A1B60CEDB00E8D226 /* UUCameraView.h */,
+				2A74C84B1B60CEDB00E8D226 /* UUCameraView.m */,
 			);
 			path = UUCamera;
 			sourceTree = "<group>";
@@ -164,6 +159,8 @@
 			children = (
 				2AF98EE51B5FCEE800654736 /* UUHomeView.h */,
 				2AF98EE61B5FCEE800654736 /* UUHomeView.m */,
+				2A74C84D1B60D14000E8D226 /* UUHomeCollectionCell.h */,
+				2A74C84E1B60D14000E8D226 /* UUHomeCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,18 +168,8 @@
 		2AF98EE01B5FCE7400654736 /* OtherFramework */ = {
 			isa = PBXGroup;
 			children = (
-				2AF98EE11B5FCE7400654736 /* FXBlurView */,
 			);
 			path = OtherFramework;
-			sourceTree = "<group>";
-		};
-		2AF98EE11B5FCE7400654736 /* FXBlurView */ = {
-			isa = PBXGroup;
-			children = (
-				2AF98EE21B5FCE7400654736 /* FXBlurView.h */,
-				2AF98EE31B5FCE7400654736 /* FXBlurView.m */,
-			);
-			path = FXBlurView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,13 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A74C84F1B60D14000E8D226 /* UUHomeCollectionCell.m in Sources */,
 				2AF98EBB1B5F772500654736 /* ViewController.m in Sources */,
-				2AF98EEE1B5FFC5200654736 /* JMBackgroundCameraView.m in Sources */,
-				2AF98EDB1B5F77BD00654736 /* UUCameraViewController.m in Sources */,
-				2AF98EE41B5FCE7400654736 /* FXBlurView.m in Sources */,
 				2AF98EE71B5FCEE800654736 /* UUHomeView.m in Sources */,
 				2AF98EB81B5F772500654736 /* AppDelegate.m in Sources */,
 				2AF98EB51B5F772500654736 /* main.m in Sources */,
+				2A74C84C1B60CEDB00E8D226 /* UUCameraView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

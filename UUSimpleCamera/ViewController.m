@@ -7,19 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "UUCameraViewController.h"
-#import "FXBlurView.h"
-
-#import "JMBackgroundCameraView.h"
+#import "UUCameraView.h"
+#import "UUHomeView.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) FXBlurView *blurView;
-@property (nonatomic, strong) UUCameraViewController *cameraController;
-
 @property (strong, nonatomic) UIButton *snapButton;
 
-
+@property (nonatomic, strong, getter = getCameraView) UUCameraView *cameraView;
+@property (nonatomic, strong, getter = getHomeView) UUHomeView *homeView;
 @end
 
 @implementation ViewController
@@ -30,13 +26,9 @@
     
 
     self.view.backgroundColor = [UIColor clearColor];
-    
-    JMBackgroundCameraView *view = [[JMBackgroundCameraView alloc] initWithFrame:self.view.bounds
-                                                                  positionDevice:DevicePositonBack
-                                                                            blur:UIBlurEffectStyleLight];
-    
-    [self.view addSubview:view];
-    
+
+    [self.view addSubview:self.cameraView];
+    [self.view addSubview:self.homeView];
     
     
 //    [self.view setBackgroundColor:[UIColor clearColor]];
@@ -85,6 +77,28 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (UUCameraView *)getCameraView{
+
+    if (!_cameraView) {
+        
+        _cameraView = [[UUCameraView alloc] initWithFrame:self.view.bounds
+                                           positionDevice:kUUDevicePositonBack
+                                                     blur:UIBlurEffectStyleLight];
+    }
+    
+    return _cameraView;
+}
+
+- (UUHomeView *)getHomeView{
+
+    if (!_homeView) {
+        
+        _homeView = [[UUHomeView alloc] initWithFrame:self.view.bounds];
+    }
+    
+    return _homeView;
 }
 
 @end
