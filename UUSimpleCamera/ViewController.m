@@ -7,15 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "UUCameraView.h"
+#import "UUCameraActionView.h"
 #import "UUHomeView.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) UIButton *snapButton;
 
-@property (nonatomic, strong, getter = getCameraView) UUCameraView *cameraView;
 @property (nonatomic, strong, getter = getHomeView) UUHomeView *homeView;
+@property (nonatomic, strong, getter = getActionView) UUCameraActionView *actionView;
 @end
 
 @implementation ViewController
@@ -25,9 +25,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 
-    self.view.backgroundColor = [UIColor clearColor];
 
-    [self.view addSubview:self.cameraView];
+    [self.view addSubview:self.actionView];
     [self.view addSubview:self.homeView];
     
     
@@ -79,16 +78,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UUCameraView *)getCameraView{
+- (UUCameraActionView *)getActionView{
 
-    if (!_cameraView) {
+    if (!_actionView) {
         
-        _cameraView = [[UUCameraView alloc] initWithFrame:self.view.bounds
-                                           positionDevice:kUUDevicePositonBack
-                                                     blur:UIBlurEffectStyleLight];
+        _actionView = [[UUCameraActionView alloc] initWithFrame:self.view.bounds];
     }
     
-    return _cameraView;
+    return _actionView;
 }
 
 - (UUHomeView *)getHomeView{
